@@ -1,9 +1,9 @@
 # デジタルTV用文字コード(ARIB STD-B24)のiconv変換モジュール
-[Opippi さんの gconv-module-aribb24](https://github.com/0p1pp1/gconv-module-aribb24) のビルド・インストール方法だけを改変したものです
+[Opippi さんの gconv-module-aribb24](https://github.com/0p1pp1/gconv-module-aribb24) のビルド・インストール方法だけを改変したものです  
 それ以外のソースコードは全く同じです
 
 `GCONV_PATH` 環境変数を使うのではなく `iconvconfig` コマンドによりモジュール設定させます
-(`man iconvconf` (8) 参照)
+(`man iconvconfig` (8) 参照)
 
 ## ビルド
 OS の iconv 変換モジュールが `/usr/lib/gconv` 以外にある場合 `configure` 実行時に `GCONVSYSDIR` 環境変数にパスを指定します
